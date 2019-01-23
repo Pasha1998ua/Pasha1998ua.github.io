@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Portfolio</title>
+    </head>
+    <body onload="intializeSite()">
+        <nav>
+            <div class="menuBtn" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="menuField" onclick="toggleMenu()">
+                <span id="persInfoBtn" class="menuItem" onclick="toggleArticle('persInfo')">About</span>
+                <span id="skillsBtn" class="menuItem" onclick="toggleArticle('skills')">Skills</span>
+                <span id="educationBtn" class="menuItem" onclick="toggleArticle('education')">Education</span>
+            </div>
+        </nav>
+
+        <div class="articleHolder">
+            <article id="persInfo">
+                <h1>Huk Pavlo</h1>
+                <h2>Personal Information</h2>
+                <span>Address: Kyiv Ukraine</span>
+                <span>Cellphone: (066)-36-80-997</span>
+                <span>Skype: pashahuk1998@gmail.com</span>
+                <span>Email: pasha.huk.98@gmail.com</span>
+                <span>Birthdate: 11.07.1998</span>
+            </article>
+            <article id="skills" style="display: none;">
+                <h2>Skills</h2>
+                <span>Knowledge of HTML5, CSS3 and JavaScript</span>
+                <span>jQuery basics</span>
+                <span>AJAX basics</span>
+                <span>SQL basics</span>
+                <span>Git</span>
+                <span>Responsive markup</span>
+                <span>English – Intermediate</span>
+            </article>
+            <article id="education" style="display: none;">
+                <h2>Education</h2>
+                <span>National Aviation University</span> 
+                <span>Institute of Computer</span>
+                <span>Informational Technologies</span>
+                <span>Software Engineering</span>
+                <span>Department (2015 - present)</span>
+            </article>
+        </div>
+        <script src="scripts/page.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -244,3 +244,21 @@ article span{
         transform: rotate(0deg);
     }
 }
+
+@media screen and (max-width: 480px) {
+    article {
+        width: 90%;
+    }
+
+    article h1{
+        font-size: 28px;
+    }
+    
+    article h2{
+        font-size: 20px;
+    }
+    
+    article span{
+        font-size: 13px;
+    }
+}
